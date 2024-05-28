@@ -111,6 +111,7 @@ insert  into `demo_user`(`id`,`name`,`gender`,`age`,`gmt_create`,`gmt_modified`,
 | commit;                                                        |                                                           |
 
 - solution 2  
+
 | session 1                                               | session 2                                               |
 | ---                                                     | ---                                                     |
 | set session transaction isolation level read committed; | set session transaction isolation level read committed; |
@@ -136,6 +137,7 @@ insert  into `demo_user`(`id`,`name`,`gender`,`age`,`gmt_create`,`gmt_modified`,
 
 
 - solution 1  add lock  
+
 | session 1                                                      | session 2                                               |
 | ---                                                            | ---                                                     |
 | set session transaction isolation level read committed;        | set session transaction isolation level read committed; |
@@ -149,6 +151,7 @@ insert  into `demo_user`(`id`,`name`,`gender`,`age`,`gmt_create`,`gmt_modified`,
 |                                                                | rollback ;                                              |
 
 - solution 2  add lock  
+
 | session 1                                                | session 2                                                |
 | ---                                                      | ---                                                      |
 | set session transaction isolation level repeatable read; | set session transaction isolation level repeatable read; |
