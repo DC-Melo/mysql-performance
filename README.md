@@ -98,7 +98,7 @@ insert  into `demo_user`(`id`,`name`,`gender`,`age`,`gmt_create`,`gmt_modified`,
 |                                                           | rollback ;                                                |
 | commit;                                                   |                                                           |
 
-- solution 1
+- solution 1  
 | session 1                                                      | session 2                                                 |
 | ---                                                            | ---                                                       |
 | set session transaction isolation level read uncommitted;      | set session transaction isolation level read uncommitted; |
